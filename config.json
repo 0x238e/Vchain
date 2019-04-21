@@ -1,36 +1,22 @@
-data from  IFPC
 
-事件类型 状态 id 自动、手动 faqigps 传感器：opencv选框（n×（左上角坐标，右上角坐标）） 距相近车的距离（n×距离）
 {
       "event": {                                                             
         "state": "confirmed" & "unconfirmed",                                                 
         "type": "overtake" & "compete",                                                  
         "id": 0x41742318,  #发送id      
         "expire": True, & False
-        "start_gps": "GPRMC,080655.00,A,4546.40891,N,12639.65641,E,1.045,328.42,170809,,,A*60", (标准数据：　　
-        <1> UTC 时间，hhmmss(时分秒)格式 
-    　　<2> 定位状态，A=有效定位，V=无效定位 
-    　　<3>纬度ddmm.mmmm(度分)格式(前面的0也将被传输) 
-    　　<4> 纬度半球N(北半球)或S(南半球) 
-    　　<5>经度dddmm.mmmm(度分)格式(前面的0也将被传输) 
-    　　<6> 经度半球E(东经)或W(西经) 
-    　　<7>地面速率(000.0~999.9节，前面的0也将被传输) 
-    　　<8>地面航向(000.0~359.9度，以真北为参考基准，前面的0也将被传输) 
-    　　<9> UTC 日期，ddmmyy(日月年)格式 
-    　　<10>磁偏角(000.0~180.0度，前面的0也将被传输) 
-    　　<11> 磁偏角方向，E(东)或W(西) 
-    　　<12>模式指示(仅NMEA01833.00版本输出，A=自主定位，D=差分，E=估算，N=数据无效)） 
-        "user_level":1-10, (用户的急躁程度,愿意超车的程度)        
-        "decider": "human" & "car" & "cloud",                                                 
+        "start_gps": "GPRMC,080655.00,A,4546.40891,N,12639.65641,E,1.045,328.42,170809,,,A*60",
+        "user_level":1-10,        
+        "decider": "human",                                                 
         "car_decide": "overtake",
         "cloud_decide": "overtake"
         "senser_cv": {
-            n×（左上角坐标，右上角坐标)
+
         }, 
         "sensor_distance": {
-            n×（距离）
+
         }, 
-        "sensor_wifi_strenth":1-4,(在界面上显示)
+        "sensor_wifi_strenth":1,
         
     }  
   
