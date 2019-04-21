@@ -3,7 +3,7 @@ from time import ctime
 import run
 
 host = ''
-port = 12345
+port = 1234
 buffsize = 2048
 ADDR = (host,port)
 
