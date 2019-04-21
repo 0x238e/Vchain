@@ -5,7 +5,8 @@ from solc import compile_source
 from cpc_fusion.contract import ConciseContract
 
 def update(data,myaddr):
-    data=json.dumps(data)
+    # data=json.dumps(data)
+    data=str(data)
     # Solidity source code
     contract_source_code = '''
     pragma solidity ^0.4.24;
@@ -27,7 +28,7 @@ def update(data,myaddr):
         }
     }
     '''
-    print(contract_source_code)
+    # print(contract_source_code)
 
     compiled_sol = compile_source(contract_source_code)  # Compiled source code
     contract_interface = compiled_sol['<stdin>:Dumper']
@@ -58,12 +59,12 @@ def update(data,myaddr):
     # tx_hash = Dumper.constructor().transact()
 
     # print('*********',w3.cpc.getTransactionReceipt(tx_hash_raw))
-    print('*********', w3.cpc.getTransactionReceipt(tx_hash))
+    # print('*********', w3.cpc.getTransactionReceipt(tx_hash))
 
     # Wait for the transaction to be mined, and get the transaction receipt
     tx_receipt = w3.cpc.waitForTransactionReceipt(tx_hash)
     # tx_receipt1 = w3.cpc.waitForTransactionReceipt(tx_hash_raw)
-    print(tx_receipt)
+    # print(tx_receipt)
     # print(tx_receipt1)
 
     # Create the contract instance with the newly-deployed address
