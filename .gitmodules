@@ -1,0 +1,6 @@
+[submodule "vengin"]
+	path = vengin
+	url = https://github.com/0x238e/vengine.git
+[submodule "vdashboard"]
+	path = vdashboard
+	url = https://github.com/0x238e/vdashboard.git
