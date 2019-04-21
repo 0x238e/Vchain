@@ -1,4 +1,5 @@
 # 0x238E文档
+##why?
 
 ## 车联网
 
@@ -20,8 +21,7 @@ https://coursetro.com/posts/code/99/Interacting-with-a-Smart-Contract-through-We
 https://solidity.readthedocs.io/en/v0.4.24/contracts.html
 https://remix.ethereum.org/ remix IDE
 https://web3js.readthedocs.io/en/1.0/web3-eth-contract.html#new-contract web-3 
-
-3、csh 树莓派距离传感器（wifi信号衰减）
+3、csh 树莓派距离传感器
 具体可用doc
 4、lyw 前端
 
@@ -31,4 +31,4 @@ https://web3js.readthedocs.io/en/1.0/web3-eth-contract.html#new-contract web-3
 数据生成层  传感器将数据收集到两辆车的IoT设备
 数据共享层  IPFS(保证数据分布式)
 数据呈现层  
-![](img/1.png)
+![](./img/1.png)
