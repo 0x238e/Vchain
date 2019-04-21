@@ -36,7 +36,7 @@ left_link.unlink()
 right_link.unlink()
 left_link = traitlets.dlink((robot.left_motor, 'value'), (left_slider, 'value'))
 right_link = traitlets.dlink((robot.right_motor, 'value'), (right_slider, 'value'))
- create buttons
+# create buttons
 button_layout = widgets.Layout(width='100px', height='80px', align_self='center')
 stop_button = widgets.Button(description='stop', button_style='danger', layout=button_layout)
 forward_button = widgets.Button(description='forward', layout=button_layout)
