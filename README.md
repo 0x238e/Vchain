@@ -1,5 +1,5 @@
 # 0x238E文档
-![](./img/3.png)
+![](http://img.victoryang00.cn/wordpress/wp-content/uploads/2019/04/logo1.png)
 Vchain 车联网
 
 ## 含义
